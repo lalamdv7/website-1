@@ -1,0 +1,29 @@
+@mixin button_1($p, $br, $fs, $mt) {
+    background-color: $green;
+    color: white;
+    border: none;
+    padding: $p;
+    border-radius: $br;
+    font-size: $fs;
+    margin-top: $mt;
+    transition: 0.3s;
+    &:hover {
+        background-color: #0d4f30;
+    }
+}
+
+@mixin button_2($p, $br, $fs, $mt) {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    padding: $p;
+    border-radius: $br;
+    font-size: $fs;
+    margin-top: $mt;
+    transition: 0.3s;
+    &:hover {
+        background-color: #0d4f30;
+        border: 2px solid #0d4f30;
+        color: white;
+    }
+}
